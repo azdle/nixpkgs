@@ -11,22 +11,22 @@ let
 
 in stdenv.mkDerivation rec {
   name = "displaylink-${version}";
-  version = "1.3.52";
+  version = "1.4.210";
 
   src = requireFile rec {
     name = "displaylink.zip";
-    sha256 = "0ridpsxcf761vym0nlpq702qa46ynddzci17bjmyax2pph7khr0k";
+    sha256 = "3634114bdc1d70b62b2933d4e7eca938e63ce382feb0936bf46d476eaab823ed";
     message = ''
       In order to install the DisplayLink drivers, you must first
       comply with DisplayLink's EULA and download the binaries and
       sources from here:
 
-      http://www.displaylink.com/downloads/file?id=744
+      http://www.displaylink.com/downloads/file?id=1057
 
       Once you have downloaded the file, please use the following
       commands and re-run the installation:
 
-      mv \$PWD/"DisplayLink USB Graphics Software for Ubuntu ${version}.zip" \$PWD/${name}
+      mv \$PWD/"DisplayLink USB Graphics Software for Ubuntu 1.4.zip" \$PWD/${name}
       nix-prefetch-url file://\$PWD/${name}
     '';
   };
