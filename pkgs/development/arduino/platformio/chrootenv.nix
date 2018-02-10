@@ -10,6 +10,7 @@ buildFHSUserEnv {
       python27Packages.pip
       python27Packages.bottle
       python27Packages.platformio
+      git
       zlib
     ]);
   multiPkgs = pkgs: (with pkgs;
@@ -19,6 +20,7 @@ buildFHSUserEnv {
       python27Packages.pip
       python27Packages.bottle
       python27Packages.platformio
+      git
       zlib
     ]);
 
