@@ -593,6 +593,8 @@ with pkgs;
 
   bonfire = callPackage ../tools/misc/bonfire { };
 
+  cobalt = callPackage ../tools/misc/cobalt { };
+
   container-linux-config-transpiler = callPackage ../development/tools/container-linux-config-transpiler { };
 
   djmount = callPackage ../tools/filesystems/djmount { };
