@@ -9,6 +9,7 @@ buildFHSUserEnv {
       python27Packages.setuptools
       python27Packages.pip
       python27Packages.bottle
+      python27Packages.requests
       python27Packages.platformio
       zlib
     ]);
@@ -18,8 +19,9 @@ buildFHSUserEnv {
       python27Packages.setuptools
       python27Packages.pip
       python27Packages.bottle
-      zlib
+      python27Packages.requests
       python27Packages.platformio
+      zlib
     ]);
 
   meta = with stdenv.lib; {
