@@ -15557,16 +15557,16 @@ in {
 
   platformio =  buildPythonPackage rec {
     name = "platformio-${version}";
-    version="2.10.3";
+    version="3.5.1";
 
     disabled = isPy3k || isPyPy;
 
     src = pkgs.fetchurl {
-      url = "https://pypi.python.org/packages/b7/a3/1d3a9d7bae91df1b607e0f31549ec3e0006f29484cc6a1431b3fe3c5b02e/platformio-2.10.3.tar.gz";
-      sha256 = "f3a646871f9baed05f336a32576edaab90abf0737d8adb54f2acb7bcad42a65f";
+      url = "https://pypi.python.org/packages/a4/34/c8a8ea8a8f8082b0f49f4cdf1978d9c7564fc4d70ab0b58dcb805c294b9a/platformio-3.5.1.tar.gz";
+      sha256 = "76f427e59be50f8ea8ab1cee97b721e9fb807ea3fd4a70e3f431dc037f2d8131";
      };
 
-     propagatedBuildInputs = with self; [ click_5 requests bottle pyserial lockfile colorama];
+     propagatedBuildInputs = with self; [ click_5 requests bottle pyserial lockfile colorama semantic-version ];
 
      meta = with stdenv.lib; {
      description = "An open source ecosystem for IoT development";
@@ -17971,11 +17971,11 @@ in {
   };
 
   pyserial = buildPythonPackage rec {
-    name = "pyserial-2.7";
+    name = "pyserial-3.4";
 
     src = pkgs.fetchurl {
       url = "mirror://pypi/p/pyserial/${name}.tar.gz";
-      sha256 = "3542ec0838793e61d6224e27ff05e8ce4ba5a5c5cc4ec5c6a3e8d49247985477";
+      sha256 = "6e2d401fdee0eab996cf734e67773a0143b932772ca8b42451440cfed942c627";
     };
 
     doCheck = false;
@@ -20503,10 +20503,10 @@ in {
   };
 
   semantic-version = buildPythonPackage rec {
-    name = "semantic_version-2.4.2";
+    name = "semantic_version-2.5.0";
     src = pkgs.fetchurl {
       url = "mirror://pypi/s/semantic_version/${name}.tar.gz";
-      sha256 = "7e8b7fa74a3bc9b6e90b15b83b9bc2377c78eaeae3447516425f475d5d6932d2";
+      sha256 = "3baad35dcb074a49419539cea6a33b484706b6c2dd03f05b67763eba4c1bb65c";
     };
 
     meta = {
